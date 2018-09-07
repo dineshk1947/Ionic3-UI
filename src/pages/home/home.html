@@ -1,0 +1,247 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-center>  
+      <ion-icon name="trophy" class="trophy"></ion-icon>Contest
+    </ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="openModal()">
+          <img src="assets/imgs/Store.png" class="store-img" />
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-grid>
+        <ion-row class="currency-bar">          
+          <ion-col class="red-border" col-4 text-center>
+              <ion-icon  class="custom-redradio  radio-btn"></ion-icon>
+              <span>24</span>
+          </ion-col>
+          <ion-col class="blue-border" col-4 text-center>
+              <ion-icon  class="custom-blueradio radio-btn"></ion-icon>
+              <span>7</span>
+          </ion-col>
+          <ion-col class="yellow-border" col-4 text-center>
+            <ion-icon  class="custom-yellow radio-btn"></ion-icon>
+            <span>34</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid class="grid-gamezone">
+
+          <div class="row-height">
+              <ion-header class="color-switch">
+                  Color Switch
+                </ion-header>
+              <div class="row-left">
+                  <div class="return-col">
+                      <img src="assets/imgs/back.png" class="back-arrow">
+                  </div>
+                
+                   <div class="rank-expert"> <img src="assets/imgs/Rank.png" class="rank-img"></div>
+               
+              </div>
+              <div class="row-right">
+                  
+                    <div ><img src="assets/imgs/icon.png" class="tiger-img"></div>
+                    <div class="arrow-btn"><button class="for-padding" ion-button color="secondary"><ion-icon name="ios-arrow-forward"></ion-icon></button></div>
+               
+              </div>
+            </div>
+      </ion-grid>
+      <ion-grid class="grid-score">
+        <ion-row class="row-height">
+            <ion-col col-4 text-center>
+               <img src="../../assets/imgs/illustration.png" alt="">
+            </ion-col>
+            <ion-col col-8>
+               <div>
+                  <!-- <button ion-button (click)="animateElem()">Animate it!</button> -->
+                  <!-- <ion-card #myElement>
+                    <ion-card-header>My Animation Card</ion-card-header>
+                    <ion-card-content>So much awesome content and animations. AMAZING!</ion-card-content>
+                  </ion-card> -->
+                 <span class="text-massage1 blink_me">Your score has been submited.</span><br/> 
+                 <span class="text-massage2 blink_me">You have more attempts why not try to better you score.</span>
+               </div>
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid class="grid-score-result fx-col">
+          <ion-row class="row-height">
+              <ion-col col-5 text-center>
+                <div class="profile-img-wrap">
+                  <div class="profile-img">
+                      <img src="../../assets/imgs/profile_pic.png" alt="">
+                  </div>
+                  <div class="flag left">
+                      <img src="../../assets/imgs/flag.png" alt="">
+                  </div>
+              </div>
+              <div class="username">
+                  Amari-jade
+              </div>
+              <div class="user-score">
+                  Your score
+              </div>
+
+              </ion-col>
+
+              <ion-col col-2 text-center class="align-item-center d-flex">
+                <div class="profile-seperator">
+                  <img src="../../assets/imgs/more.png" alt="">
+                </div>
+              </ion-col>
+              <ion-col col-5 text-center>
+                  <div class="profile-img-wrap">
+                      <div class="flag right">
+                          <img src="../../assets/imgs/flag.png" alt="">
+                      </div>
+                    <div class="profile-img">
+                        <img src="../../assets/imgs/profile_pic.png" alt="">
+                    </div>
+                </div>
+                <div class="username">
+                    Amari-jade
+                </div>
+                <div class="user-score">
+                    Your score
+                </div>
+  
+                </ion-col>
+          </ion-row>
+        
+
+          <ion-row class="row-height score-board">
+              <ion-col col-5 text-center>
+                  <div class="score-board-left">
+                    <ul>
+                      <li>
+                        <span class="score-title">
+                          Points:
+                        </span>
+                        <span class="score-value">
+                          1200
+                        </span>
+                      </li>
+                      <li>
+                          <span class="score-title">
+                            Time:
+                          </span>
+                          <span class="score-value">
+                            1200
+                          </span>
+                        </li>
+                        <li>
+                            <span class="score-title">
+                              Moves:
+                            </span>
+                            <span class="score-value">
+                              1200
+                            </span>
+                          </li>
+                          <li>
+                              <span class="score-title">
+                                Attempts:
+                              </span>
+                              <span class="score-value">
+                                1200
+                              </span>
+                            </li>
+                    </ul>
+                  </div>
+              </ion-col>
+              <ion-col col-2 text-center class="align-item-center d-flex">
+                  <div class="profile-seperator">
+                    <img src="../../assets/imgs/more.png" alt="">
+                  </div>
+                </ion-col>
+              <ion-col col-5 text-center>
+                  <div class="score-board-left">
+                      <ul>
+                        <li>
+                          <span class="score-title">
+                            Points:
+                          </span>
+                          <span class="score-value">
+                            1200
+                          </span>
+                        </li>
+                        <li>
+                            <span class="score-title">
+                              TIME:
+                            </span>
+                            <span class="score-value">
+                              1200
+                            </span>
+                          </li>
+                          <li>
+                              <span class="score-title">
+                                MOVES:
+                              </span>
+                              <span class="score-value">
+                                1200
+                              </span>
+                            </li>
+                            <li>
+                                <span class="score-title">
+                                  ATTEMPTS:
+                                </span>
+                                <span class="score-value">
+                                  1200
+                                </span>
+                              </li>
+                      </ul>
+                    </div>
+              </ion-col>
+          </ion-row>
+          
+      </ion-grid>
+
+      
+
+        <ion-grid class="grid-timer">
+            <ion-row class="row-height">              
+
+                <ion-col col-12 text-center>
+
+                  <div class="timer-box">
+                    <img src="assets/imgs/time.png" class="timer-icon">
+                    <div class="ends">Ends:</div>
+                    <div class="hours">23 <span class="b-time">hours</span></div>
+                
+                    <div class="profile-seperator">
+                        <img src="../../assets/imgs/more.png" alt="">
+                      </div>
+                    
+                    <div class="mins">
+                      45 <span class="b-time">mins</span>
+                    </div>
+                    <div class="profile-seperator">
+                        <img src="../../assets/imgs/more.png" alt="">
+                      </div>
+                    <div class="secs">
+                      13 <span class="b-time">
+                        secs
+                      </span>
+                    </div>
+                  </div>
+
+                  </ion-col>
+
+            </ion-row>
+        </ion-grid>
+        
+        
+</ion-content>
+<ion-footer>
+    <!-- <ion-toolbar> -->
+      <img src="assets/imgs/ad.png" class="advertise-img">
+    <!-- </ion-toolbar> -->
+  </ion-footer>
+
+   
